@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project("nanopb" LANGUAGES CXX VERSION 1.0.0
+project("nanosvg" LANGUAGES CXX VERSION 1.0.0
   DESCRIPTION "Simple stupid SVG parser"
   HOMEPAGE_URL "https://github.com/CodeFinder2/nanosvg")
 include(GNUInstallDirs)

@@ -5,8 +5,7 @@ project("nanosvg" LANGUAGES CXX VERSION 1.0.0
 include(GNUInstallDirs)
 
 add_library(${PROJECT_NAME} src/nanosvg.cpp)
-target_include_directories(
-  ${PROJECT_NAME}
+target_include_directories(${PROJECT_NAME} SYSTEM
   PUBLIC $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}/include>
          $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_compile_definitions(${PROJECT_NAME} PUBLIC NANOSVG_CPLUSPLUS)
